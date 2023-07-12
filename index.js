@@ -24,7 +24,7 @@ const mongooseConfig = {
 db.mongoose.connect(db.url, mongooseConfig)
     .then(() => console.log('database connected'))
     .then(() => {
-        app.get("/", (req, res) => {
+        app.get("/api", (req, res) => {
             const response = { msg: "API Works!" };
             res.json(response)
         })
